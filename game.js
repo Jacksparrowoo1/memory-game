@@ -53,7 +53,15 @@ $(document).on("keypress", function () {
     }
         // console.log(ready);
     });
-    
+$(document).on("touchstart", function () {
+    if (!ready) {
+        $('#level-title').text("Level "+ level);
+        nextSequence(); 
+        ready = true;
+    }
+        // console.log(ready);
+    });
+  
 
 // step 8
 function checkAnswer(currentLevel) {
