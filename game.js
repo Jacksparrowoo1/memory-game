@@ -9,8 +9,8 @@ function nextSequence() {
     var randomNumber = Math.floor(Math.random() * 4);
     var randomChosenColour = buttonColours[randomNumber]; 
     gamePattern.push(randomChosenColour);
-    // $('#'+randomChosenColour).animate({opacity: 0.5}, 100).animate({opacity: 1}, 100);
-    $('#'+randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
+    // $('#'+randomChosenColour).animate({opacity: 0.5}, 45).animate({opacity: 1}, 45);
+    $('#'+randomChosenColour).fadeIn(45).fadeOut(45).fadeIn(45);
     
     // var audio = new Audio("sounds/" + randomChosenColour + ".mp3");
     // audio.play();
@@ -38,7 +38,7 @@ function animatePress(currentColor) {
     $('#' + currentColor).addClass("pressed");
     setTimeout(function (){
         $('#' + currentColor).removeClass("pressed");
-    }, 100);
+    }, 45);
 }
 
 var ready = false;
